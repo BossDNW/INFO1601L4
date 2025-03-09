@@ -12,12 +12,58 @@
 	* {
 		box-sizing: border-box;
 	}
+	header, footer, section, aside, main{
+		padding: 1em
+	}
+	header, footer{
+		color: white;
+		background-color: #1976D2;
+	}
+	aside{
+		color: #212121;;
+		background-color: #BBDEFB;
+	}
+	section{
+		background-color: #FF4081;
+		color: white;
+	}
+	main{
+		background-color: #2196F3;
+		color: white;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		background-color: #FFFFFF;
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
+	}
+	.row{
+		display: flex;
+		flex-direction: row;
+	}
+	div.row{
+		height: 80%;
+	}
+	.col{
+		display: flex;
+		flex-direction: column;
+	}
 </style>
 <body>
-	<main>
-		<section>
+	<header>Header</header>
+	<div class="row">
+		<aside>
+			Aside
+			<section>Section 1</section>
+			<section>Section 2</section>
+		</aside>
+		<main>
+			Main
 			<h1>Welcome</h1>
-		</section>
-	</main>	
+		</main>
+	</div>	
+	<footer>Footer</footer>
 </body>
 </html>
